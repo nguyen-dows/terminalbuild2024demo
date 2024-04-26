@@ -1,0 +1,469 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://raw.githubusercontent.com/microsoft/terminal/main/doc/cascadia/profiles.schema.json",
+    "actions": 
+    [
+        {
+            "command": 
+            {
+                "action": "scrollToMark",
+                "direction": "previous"
+            },
+            "id": "User.scrollToMark.D3F0B923",
+            "keys": "ctrl+up"
+        },
+        {
+            "command": 
+            {
+                "action": "scrollToMark",
+                "direction": "next"
+            },
+            "id": "User.scrollToMark.2A0DA8E0",
+            "keys": "ctrl+down"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": 
+            {
+                "action": "showSuggestions",
+                "source": "all",
+                "useCommandline": true
+            },
+            "id": "User.showSuggestions.4A407798",
+            "keys": "ctrl+shift+y"
+        },
+        {
+            "command": 
+            {
+                "action": "showSuggestions",
+                "source": "commandHistory",
+                "useCommandline": true
+            },
+            "id": "User.showSuggestions.807E15EE",
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "commands": 
+            [
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git add --all\r"
+                    },
+                    "name": "add all"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git commit -m \"\"\u001b[D"
+                    },
+                    "name": "commit..."
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git fetch & git pull\r"
+                    },
+                    "name": "fetch&pull"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git merge origin/main\r"
+                    },
+                    "name": "merge main"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all\r"
+                    },
+                    "name": "graph"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git log -10 --pretty=oneline --abbrev-commit\r"
+                    },
+                    "name": "log -10"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git checkout -b dev/migrie/b/"
+                    },
+                    "name": "new branch"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git branch --list \"**\"\u001b[D\u001b[D"
+                    },
+                    "name": "look for branch..."
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git push origin very_old_sha1:refs/heads/name/of/new/branch"
+                    },
+                    "name": "push old commit to new branch, without checkout"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "git clean -ndx -e *.user -e *.cmd -e packages/**"
+                    },
+                    "name": "git clean. does a dry-run. replace the n with f to actually do it. "
+                }
+            ],
+            "name": "git..."
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "firstWindowPreference": "persistedWindowLayout",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        },
+        {
+            "allowEmpty": false,
+            "entries": 
+            [
+                {
+                    "commandline": null,
+                    "name": null,
+                    "source": "Windows.Terminal.Wsl",
+                    "type": "matchProfiles"
+                },
+                {
+                    "allowEmpty": false,
+                    "entries": 
+                    [
+                        {
+                            "commandline": null,
+                            "name": null,
+                            "source": "CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc",
+                            "type": "matchProfiles"
+                        },
+                        {
+                            "commandline": null,
+                            "name": null,
+                            "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc",
+                            "type": "matchProfiles"
+                        },
+                        {
+                            "commandline": null,
+                            "name": null,
+                            "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc",
+                            "type": "matchProfiles"
+                        }
+                    ],
+                    "icon": null,
+                    "inline": "never",
+                    "name": "Canonical",
+                    "type": "folder"
+                }
+            ],
+            "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+            "inline": "never",
+            "name": "WSLs",
+            "type": "folder"
+        },
+        {
+            "allowEmpty": false,
+            "entries": 
+            [
+                {
+                    "commandline": null,
+                    "name": null,
+                    "source": "Windows.Terminal.VisualStudio",
+                    "type": "matchProfiles"
+                },
+                {
+                    "profile": "{da29b8a9-e007-5b35-a0d3-d7a869ae486e}",
+                    "type": "profile"
+                }
+            ],
+            "icon": null,
+            "inline": "never",
+            "name": "VS",
+            "type": "folder"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "antialiasingMode": "grayscale",
+            "autoMarkPrompts": true,
+            "bellStyle": "audible",
+            "closeOnExit": "never",
+            "colorScheme": "Build 2024",
+            "cursorShape": "emptyBox",
+            "experimental.repositionCursorWithMouse": true,
+            "experimental.rightClickContextMenu": true,
+            "font": 
+            {
+                "weight": "light"
+            },
+            "intenseTextStyle": "all",
+            "showMarksOnScrollbar": true
+        },
+        "list": 
+        [
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": false,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{953b409e-87fb-51f5-b70b-a7d78594dd58}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{358fdc3d-f7be-5ea0-b250-883a427eb43b}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{202014f1-d68d-53b9-8a59-0d6028868bf2}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{ac74ab87-6fd8-587f-9769-bcb2643a4918}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
+                "hidden": false,
+                "name": "Yori",
+                "source": "Yori"
+            },
+            {
+                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
+            },
+            {
+                "guid": "{4ca3f36a-954b-5f17-a131-52dc5790981e}",
+                "hidden": false,
+                "name": "Ubuntu 18.04.5 on Windows",
+                "source": "CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.3 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+            },
+            {
+                "backgroundImage": "%WT_SETTINGS_DIR%\\AppList.targetsize-96.png",
+                "backgroundImageAlignment": "topRight",
+                "backgroundImageOpacity": 0.5,
+                "backgroundImageStretchMode": "none",
+                "colorScheme": "Flatland",
+                "commandline": "cmd.exe",
+                "cursorColor": "#FF0000",
+                "font":
+                {
+                    "size": 10.0,
+                    "weight": "light"
+                },
+                "guid": "{48a6cef7-e9fa-5e68-9d4f-f6d767f4b83b}",
+                "icon": "%WT_SETTINGS_DIR%\\Sudo.ico",
+                "name": "sudo",
+                "opacity": 85,
+                "tabTitle": "sudo",
+                "useAcrylic": true
+            },
+            {
+                "altGrAliasing": true,
+                "colorScheme": "Admin Scheme",
+                "commandline": "%SystemRoot%\\System32\\sudo.exe %SystemRoot%\\System32\\cmd.exe",
+                "cursorColor": "#AFFFCF",
+                "cursorShape": "emptyBox",
+                "font":
+                {
+                    "face": "Cascadia Mono",
+                    "size": 10.0,
+                    "weight": "light"
+                },
+                "guid": "{f0c9f8b5-2565-4b49-afe0-b84d66860b84}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "\uea18",
+                "name": "Admin",
+                "opacity": 85,
+                "padding": "2",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
+                "tabColor": "#FF3333",
+                "useAcrylic": true
+            },
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#091F2C",
+            "black": "#000000",
+            "blue": "#0078D4",
+            "brightBlack": "#454142",
+            "brightBlue": "#8DC8E8",
+            "brightCyan": "#B9DCD2",
+            "brightGreen": "#8DE971",
+            "brightPurple": "#C5B4E3",
+            "brightRed": "#FFA38B",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFE399",
+            "cursorColor": "#E8E6DF",
+            "cyan": "#49C5B1",
+            "foreground": "#FFF8F3",
+            "green": "#07641D",
+            "name": "Build 2024",
+            "purple": "#8661C5",
+            "red": "#F4364C",
+            "selectionBackground": "#FFA38B",
+            "white": "#F4F3F5",
+            "yellow": "#FFB900"
+        },
+        {
+            "background": "#FF3333",
+            "black": "#000000",
+            "blue": "#36A3D9",
+            "brightBlack": "#323232",
+            "brightBlue": "#68D5FF",
+            "brightCyan": "#C7FFFD",
+            "brightGreen": "#EAFE84",
+            "brightPurple": "#FFA3AA",
+            "brightRed": "#FF6565",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFF779",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#95E6CB",
+            "foreground": "#000000",
+            "green": "#B8CC52",
+            "name": "Admin Scheme",
+            "purple": "#F07178",
+            "red": "#FF3333",
+            "selectionBackground": "#FFF779",
+            "white": "#FFFFFF",
+            "yellow": "#E7C547"
+        },
+    ],
+    "theme": "Purple Titlebar",
+    "themes":
+    [
+        {
+            "name": "Purple Titlebar",
+            "tab":
+            {
+                "background": "terminalBackground",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": "#00000000"
+            },
+            "tabRow":
+            {
+                "background": "#5d50ae80",
+                "unfocusedBackground": "#202020FF"
+            },
+            "window":
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": true,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": true
+            }
+        },
+
+    ],
+    "windowingBehavior": "useExisting"
+}
