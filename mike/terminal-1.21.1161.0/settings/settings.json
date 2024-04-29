@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://raw.githubusercontent.com/microsoft/terminal/main/doc/cascadia/profiles.schema.json",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "previous"
@@ -13,7 +13,7 @@
             "keys": "ctrl+up"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "next"
@@ -22,7 +22,7 @@
             "keys": "ctrl+down"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "globalSummon"
             },
@@ -30,7 +30,7 @@
             "keys": "ctrl+1"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -44,7 +44,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "showSuggestions",
                 "source": "all",
@@ -54,27 +54,26 @@
             "keys": "ctrl+shift+y"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "multipleActions",
-                "actions": 
+                "actions":
                 [
                     {
                         "action": "newTab",
                         "colorScheme": "One Half Dark",
-                        "tabTitle": "Work"
+                        "profile": "Web Project",
                     },
                     {
                         "action": "splitPane",
                         "colorScheme": "Solarized Light",
-                        "profile": "Command Prompt",
+                        "profile": "frontend",
                         "split": "right",
-                        "tabTitle": "Work"
                     },
                     {
                         "action": "splitPane",
                         "colorScheme": "Campbell PowerShell",
-                        "profile": "Ubuntu",
+                        "profile": "backend",
                         "split": "down",
                         "tabTitle": "Work"
                     }
@@ -90,7 +89,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -100,7 +99,7 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "showSuggestions",
                 "source": "commandHistory",
@@ -110,7 +109,7 @@
             "keys": "ctrl+shift+h"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "sendInput",
                 "input": "reg add \"hklm\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\AutoExclusionList\" /v explorer.exe /t REG_DWORD /d 1 /f"
@@ -119,10 +118,10 @@
             "name": "prevent explorer.exe post-mortem"
         },
         {
-            "commands": 
+            "commands":
             [
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git add --all\r"
@@ -130,7 +129,7 @@
                     "name": "add all"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git commit -m \"\"\u001b[D"
@@ -138,7 +137,7 @@
                     "name": "commit..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git fetch & git pull\r"
@@ -146,7 +145,7 @@
                     "name": "fetch&pull"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git merge origin/main\r"
@@ -154,7 +153,7 @@
                     "name": "merge main"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all\r"
@@ -162,7 +161,7 @@
                     "name": "graph"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git log -10 --pretty=oneline --abbrev-commit\r"
@@ -170,7 +169,7 @@
                     "name": "log -10"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git checkout -b dev/migrie/b/"
@@ -178,7 +177,7 @@
                     "name": "new branch"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git branch --list \"**\"\u001b[D\u001b[D"
@@ -186,7 +185,7 @@
                     "name": "look for branch..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git push origin very_old_sha1:refs/heads/name/of/new/branch"
@@ -194,7 +193,7 @@
                     "name": "push old commit to new branch, without checkout"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git clean -ndx -e *.user -e *.cmd -e packages/**"
@@ -205,10 +204,10 @@
             "name": "git..."
         },
         {
-            "commands": 
+            "commands":
             [
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz} -C {destination_path}"
@@ -216,7 +215,7 @@
                     "name": "extract ze file into path..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz}"
@@ -224,7 +223,7 @@
                     "name": "extract ze file"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -cvzf {destination.tar.gz} {source}"
@@ -239,14 +238,32 @@
     "copyOnSelect": false,
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "firstWindowPreference": "persistedWindowLayout",
-    "newTabMenu": 
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         },
         {
             "allowEmpty": false,
-            "entries": 
+            "entries":
+            [
+                {
+                    "profile": "microsoft/terminal",
+                    "type": "profile"
+                },
+                {
+                    "profile": "Terminal Docs",
+                    "type": "profile"
+                }
+            ],
+            "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal.ico",
+            "inline": "never",
+            "name": "Terminal",
+            "type": "folder"
+        },
+        {
+            "allowEmpty": false,
+            "entries":
             [
                 {
                     "commandline": null,
@@ -256,7 +273,7 @@
                 },
                 {
                     "allowEmpty": false,
-                    "entries": 
+                    "entries":
                     [
                         {
                             "commandline": null,
@@ -290,7 +307,7 @@
         },
         {
             "allowEmpty": false,
-            "entries": 
+            "entries":
             [
                 {
                     "commandline": null,
@@ -309,9 +326,9 @@
             "type": "folder"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "antialiasingMode": "grayscale",
             "autoMarkPrompts": true,
@@ -321,14 +338,14 @@
             "cursorShape": "emptyBox",
             "experimental.repositionCursorWithMouse": true,
             "experimental.rightClickContextMenu": true,
-            "font": 
+            "font":
             {
                 "weight": "light"
             },
             "intenseTextStyle": "all",
             "showMarksOnScrollbar": true
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -343,7 +360,7 @@
                 "name": "Command Prompt"
             },
             {
-                "font": 
+                "font":
                 {
                     "face": "Cascadia Code NF"
                 },
@@ -371,7 +388,7 @@
                 "backgroundImageStretchMode": "none",
                 "commandline": "cmd.exe",
                 "cursorColor": "#FF0000",
-                "font": 
+                "font":
                 {
                     "size": 10.0,
                     "weight": "light"
@@ -389,7 +406,7 @@
                 "commandline": "%SystemRoot%\\System32\\sudo.exe %SystemRoot%\\System32\\cmd.exe",
                 "cursorColor": "#AFFFCF",
                 "cursorShape": "emptyBox",
-                "font": 
+                "font":
                 {
                     "face": "Cascadia Mono",
                     "size": 10.0,
@@ -398,7 +415,7 @@
                 "guid": "{f0c9f8b5-2565-4b49-afe0-b84d66860b84}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "\uea18",
+                "icon": "C:\\Windows\\System32\\UserAccountControlSettings.exe",
                 "name": "Admin",
                 "opacity": 85,
                 "padding": "2",
@@ -406,10 +423,48 @@
                 "startingDirectory": "%USERPROFILE%",
                 "tabColor": "#FF3333",
                 "useAcrylic": true
-            }
+            },
+            {
+                "commandline": "cmd.exe",
+                "font":
+                {
+                    "size": 10.0,
+                    "weight": "light"
+                },
+                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal",
+                "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal.ico",
+                "name": "microsoft/terminal"
+            },
+            {
+                "commandline": "cmd.exe",
+                "colorScheme": "One Half Light",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal-docs",
+                "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal\\images\\terminal_contrast-black.ico",
+                "name": "Terminal Docs"
+            },
+            {
+                "commandline": "cmd.exe /k echo this is where we'll put the backend",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
+                "name": "backend",
+                "hidden": true
+            },
+            {
+                "commandline": "cmd.exe /k echo this is where we'll put the frontend",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
+                "colorScheme": "Solarized Light",
+                "name": "frontend",
+                "hidden": true
+            },
+            {
+                "commandline": "pwsh.exe",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
+                "icon": "💻",
+                "colorScheme": "One Half Dark",
+                "name": "Web Project"
+            },
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#FF3333",
@@ -459,23 +514,23 @@
         }
     ],
     "theme": "Purple Titlebar",
-    "themes": 
+    "themes":
     [
         {
             "name": "Purple Titlebar",
-            "tab": 
+            "tab":
             {
                 "background": "terminalBackground",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": "#00000000"
             },
-            "tabRow": 
+            "tabRow":
             {
                 "background": "#5D50AE80",
                 "unfocusedBackground": "#202020FF"
             },
-            "window": 
+            "window":
             {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": true,
