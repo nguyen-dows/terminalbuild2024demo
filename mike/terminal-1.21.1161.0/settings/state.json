@@ -13,32 +13,34 @@
 		"{358fdc3d-f7be-5ea0-b250-883a427eb43b}",
 		"{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
 		"{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+		"{51855cb2-8cce-5362-8f54-464b92b32386}",
 		"{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
-		"{4ca3f36a-954b-5f17-a131-52dc5790981e}"
+		"{4ca3f36a-954b-5f17-a131-52dc5790981e}",
+		"{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}"
 	],
 	"persistedWindowLayouts" : 
 	[
 		{
-			"initialPosition" : "130,130",
+			"initialPosition" : "739,-1065",
 			"initialSize" : 
 			{
-				"height" : 586.0,
-				"width" : 1113.0
+				"height" : 643.0,
+				"width" : 1166.0
 			},
 			"launchMode" : "default",
 			"tabLayout" : 
 			[
 				{
 					"action" : "newTab",
-					"commandline" : "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
-					"profile" : "PowerShell",
-					"sessionId" : "{756c6592-78dc-451d-996e-4bb40a41bd53}",
-					"startingDirectory" : "C:\\Users\\migrie",
+					"commandline" : "%SystemRoot%\\System32\\cmd.exe",
+					"profile" : "Command Prompt",
+					"sessionId" : "{e949ff3e-ba94-41b7-aa2c-05a4522f7734}",
+					"startingDirectory" : "C:\\Users\\chrnguyen",
 					"suppressApplicationTitle" : false,
-					"tabTitle" : "PowerShell"
+					"tabTitle" : "Command Prompt"
 				}
 			]
 		}
 	],
-	"settingsHash" : "a663d5e63da84a6c-01da9807c0324c33"
+	"settingsHash" : "e6438ba63e4d432f-01da9a6dcdb79277"
 }
