@@ -5,18 +5,18 @@
 	],
 	"generatedProfiles" : 
 	[
-		"{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 		"{ac74ab87-6fd8-587f-9769-bcb2643a4918}",
-		"{953b409e-87fb-51f5-b70b-a7d78594dd58}",
+		"{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 		"{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+		"{953b409e-87fb-51f5-b70b-a7d78594dd58}",
 		"{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
 		"{2c4de342-38b7-51cf-b940-2309a097f518}",
 		"{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-		"{202014f1-d68d-53b9-8a59-0d6028868bf2}",
 		"{aab79973-318f-43b6-a9bc-b4096493753f}",
+		"{202014f1-d68d-53b9-8a59-0d6028868bf2}",
 		"{358fdc3d-f7be-5ea0-b250-883a427eb43b}",
-		"{16208362-94fc-5b1f-a491-5b2624d5ab56}",
 		"{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
+		"{16208362-94fc-5b1f-a491-5b2624d5ab56}",
 		"{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
 		"{4ca3f36a-954b-5f17-a131-52dc5790981e}"
 	],
@@ -44,5 +44,10 @@
 			]
 		}
 	],
-	"settingsHash" : "8f3ac3f4106cc280-01da9a788c0b3aa5"
+	"recentCommands" : 
+	[
+		"sp -p frontend",
+		"nt -p backend"
+	],
+	"settingsHash" : "5deb6be281f4dbf3-01da9a80b22a3152"
 }

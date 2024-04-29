@@ -81,6 +81,7 @@
             },
             "id": "User.multipleActions.ABA14600",
             "keys": "ctrl+3",
+            "icon": "💻",
             "name": "Create My Workspace"
         },
         {
@@ -156,7 +157,7 @@
                     "command":
                     {
                         "action": "sendInput",
-                        "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all\r"
+                        "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all"
                     },
                     "name": "graph"
                 },
@@ -443,13 +444,13 @@
                 "name": "Terminal Docs"
             },
             {
-                "commandline": "cmd.exe /k echo this is where we'll put the backend",
+                "commandline": "pwsh.exe .\\backend.ps1",
                 "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
                 "name": "backend",
                 "hidden": true
             },
             {
-                "commandline": "cmd.exe /k echo this is where we'll put the frontend",
+                "commandline": "pwsh.exe .\\frontend.ps1",
                 "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
                 "colorScheme": "Solarized Light",
                 "name": "frontend",
@@ -533,7 +534,7 @@
             "window":
             {
                 "applicationTheme": "dark",
-                "experimental.rainbowFrame": true,
+                "experimental.rainbowFrame": false,
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": true
