@@ -6,11 +6,11 @@
         {
             "command": 
             {
-                "action": "scrollToMark",
-                "direction": "previous"
+                "action": "copy",
+                "singleLine": false
             },
-            "id": "User.scrollToMark.D3F0B923",
-            "keys": "ctrl+up"
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -24,11 +24,11 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "scrollToMark",
+                "direction": "previous"
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.scrollToMark.D3F0B923",
+            "keys": "ctrl+up"
         },
         {
             "command": "paste",
@@ -39,6 +39,16 @@
             "command": "find",
             "id": "User.find",
             "keys": "ctrl+shift+f"
+        },
+        {
+            "command": 
+            {
+                "action": "showSuggestions",
+                "source": "all",
+                "useCommandline": true
+            },
+            "id": "User.showSuggestions.4A407798",
+            "keys": "ctrl+shift+y"
         },
         {
             "command": 
@@ -54,21 +64,20 @@
             "command": 
             {
                 "action": "showSuggestions",
-                "source": "all",
-                "useCommandline": true
-            },
-            "id": "User.showSuggestions.4A407798",
-            "keys": "ctrl+shift+y"
-        },
-        {
-            "command": 
-            {
-                "action": "showSuggestions",
                 "source": "commandHistory",
                 "useCommandline": true
             },
             "id": "User.showSuggestions.807E15EE",
             "keys": "ctrl+shift+h"
+        },
+        {
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "reg add \"hklm\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\AutoExclusionList\" /v explorer.exe /t REG_DWORD /d 1 /f"
+            },
+            "id": "User.sendInput.3A3DD9E3",
+            "name": "prevent explorer.exe post-mortem"
         },
         {
             "commands": 
@@ -155,6 +164,36 @@
                 }
             ],
             "name": "git..."
+        },
+        {
+            "commands": 
+            [
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "tar -xvzf {source.tar.gz} -C {destination_path}"
+                    },
+                    "name": "extract ze file into path..."
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "tar -xvzf {source.tar.gz}"
+                    },
+                    "name": "extract ze file"
+                },
+                {
+                    "command": 
+                    {
+                        "action": "sendInput",
+                        "input": "tar -cvzf {destination.tar.gz} {source}"
+                    },
+                    "name": "compress ze file"
+                }
+            ],
+            "name": "tar..."
         }
     ],
     "copyFormatting": "none",
@@ -350,7 +389,7 @@
                 "colorScheme": "Flatland",
                 "commandline": "cmd.exe",
                 "cursorColor": "#FF0000",
-                "font":
+                "font": 
                 {
                     "size": 10.0,
                     "weight": "light"
@@ -368,7 +407,7 @@
                 "commandline": "%SystemRoot%\\System32\\sudo.exe %SystemRoot%\\System32\\cmd.exe",
                 "cursorColor": "#AFFFCF",
                 "cursorShape": "emptyBox",
-                "font":
+                "font": 
                 {
                     "face": "Cascadia Mono",
                     "size": 10.0,
@@ -385,34 +424,11 @@
                 "startingDirectory": "%USERPROFILE%",
                 "tabColor": "#FF3333",
                 "useAcrylic": true
-            },
+            }
         ]
     },
     "schemes": 
     [
-        {
-            "background": "#091F2C",
-            "black": "#000000",
-            "blue": "#0078D4",
-            "brightBlack": "#454142",
-            "brightBlue": "#8DC8E8",
-            "brightCyan": "#B9DCD2",
-            "brightGreen": "#8DE971",
-            "brightPurple": "#C5B4E3",
-            "brightRed": "#FFA38B",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFE399",
-            "cursorColor": "#E8E6DF",
-            "cyan": "#49C5B1",
-            "foreground": "#FFF8F3",
-            "green": "#07641D",
-            "name": "Build 2024",
-            "purple": "#8661C5",
-            "red": "#F4364C",
-            "selectionBackground": "#FFA38B",
-            "white": "#F4F3F5",
-            "yellow": "#FFB900"
-        },
         {
             "background": "#FF3333",
             "black": "#000000",
@@ -436,25 +452,48 @@
             "white": "#FFFFFF",
             "yellow": "#E7C547"
         },
+        {
+            "background": "#091F2C",
+            "black": "#000000",
+            "blue": "#0078D4",
+            "brightBlack": "#454142",
+            "brightBlue": "#8DC8E8",
+            "brightCyan": "#B9DCD2",
+            "brightGreen": "#8DE971",
+            "brightPurple": "#C5B4E3",
+            "brightRed": "#FFA38B",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFE399",
+            "cursorColor": "#E8E6DF",
+            "cyan": "#49C5B1",
+            "foreground": "#FFF8F3",
+            "green": "#07641D",
+            "name": "Build 2024",
+            "purple": "#8661C5",
+            "red": "#F4364C",
+            "selectionBackground": "#FFA38B",
+            "white": "#F4F3F5",
+            "yellow": "#FFB900"
+        }
     ],
     "theme": "Purple Titlebar",
-    "themes":
+    "themes": 
     [
         {
             "name": "Purple Titlebar",
-            "tab":
+            "tab": 
             {
                 "background": "terminalBackground",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": "#00000000"
             },
-            "tabRow":
+            "tabRow": 
             {
-                "background": "#5d50ae80",
+                "background": "#5D50AE80",
                 "unfocusedBackground": "#202020FF"
             },
-            "window":
+            "window": 
             {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": true,
@@ -462,8 +501,7 @@
                 "unfocusedFrame": null,
                 "useMica": true
             }
-        },
-
+        }
     ],
     "windowingBehavior": "useExisting"
 }
