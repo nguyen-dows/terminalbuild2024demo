@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://raw.githubusercontent.com/microsoft/terminal/main/doc/cascadia/profiles.schema.json",
-    "actions":
+    "actions": 
     [
         {
-            "command":
+            "command": 
             {
                 "action": "scrollToMark",
                 "direction": "previous"
@@ -13,7 +13,7 @@
             "keys": "ctrl+up"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "scrollToMark",
                 "direction": "next"
@@ -22,7 +22,7 @@
             "keys": "ctrl+down"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "globalSummon"
             },
@@ -30,7 +30,7 @@
             "keys": "ctrl+1"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -44,7 +44,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "showSuggestions",
                 "source": "all",
@@ -54,21 +54,21 @@
             "keys": "ctrl+shift+y"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "multipleActions",
-                "actions":
+                "actions": 
                 [
                     {
                         "action": "newTab",
                         "colorScheme": "One Half Dark",
-                        "profile": "Web Project",
+                        "profile": "Web Project"
                     },
                     {
                         "action": "splitPane",
                         "colorScheme": "Solarized Light",
                         "profile": "frontend",
-                        "split": "right",
+                        "split": "right"
                     },
                     {
                         "action": "splitPane",
@@ -79,9 +79,9 @@
                     }
                 ]
             },
+            "icon": "\ud83d\udcbb",
             "id": "User.multipleActions.ABA14600",
             "keys": "ctrl+3",
-            "icon": "💻",
             "name": "Create My Workspace"
         },
         {
@@ -90,7 +90,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -100,7 +100,7 @@
             "keys": "alt+shift+d"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "showSuggestions",
                 "source": "commandHistory",
@@ -110,7 +110,7 @@
             "keys": "ctrl+shift+h"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "sendInput",
                 "input": "reg add \"hklm\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\AutoExclusionList\" /v explorer.exe /t REG_DWORD /d 1 /f"
@@ -119,10 +119,19 @@
             "name": "prevent explorer.exe post-mortem"
         },
         {
-            "commands":
+            "command": 
+            {
+                "action": "sendInput",
+                "input": "cdd\rmsbuild\rrun-tests\rgit status\rgit commit\rgit add --all\rgit commit\rgit push\rdir\rgit status\r"
+            },
+            "id": "User.sendInput.3A3DD9E3",
+            "name": "scott demo"
+        },
+        {
+            "commands": 
             [
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git add --all\r"
@@ -130,7 +139,7 @@
                     "name": "add all"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git commit -m \"\"\u001b[D"
@@ -138,7 +147,7 @@
                     "name": "commit..."
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git fetch & git pull\r"
@@ -146,7 +155,7 @@
                     "name": "fetch&pull"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git merge origin/main\r"
@@ -154,7 +163,7 @@
                     "name": "merge main"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all"
@@ -162,7 +171,7 @@
                     "name": "graph"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git log -10 --pretty=oneline --abbrev-commit\r"
@@ -170,7 +179,7 @@
                     "name": "log -10"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git checkout -b dev/migrie/b/"
@@ -178,7 +187,7 @@
                     "name": "new branch"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git branch --list \"**\"\u001b[D\u001b[D"
@@ -186,7 +195,7 @@
                     "name": "look for branch..."
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git push origin very_old_sha1:refs/heads/name/of/new/branch"
@@ -194,7 +203,7 @@
                     "name": "push old commit to new branch, without checkout"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "git clean -ndx -e *.user -e *.cmd -e packages/**"
@@ -205,10 +214,10 @@
             "name": "git..."
         },
         {
-            "commands":
+            "commands": 
             [
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz} -C {destination_path}"
@@ -216,7 +225,7 @@
                     "name": "extract ze file into path..."
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz}"
@@ -224,7 +233,7 @@
                     "name": "extract ze file"
                 },
                 {
-                    "command":
+                    "command": 
                     {
                         "action": "sendInput",
                         "input": "tar -cvzf {destination.tar.gz} {source}"
@@ -237,23 +246,23 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "firstWindowPreference": "persistedWindowLayout",
-    "newTabMenu":
+    "newTabMenu": 
     [
         {
             "type": "remainingProfiles"
         },
         {
             "allowEmpty": false,
-            "entries":
+            "entries": 
             [
                 {
-                    "profile": "microsoft/terminal",
+                    "profile": "{94ccc889-2f98-5c0c-9d14-912b02ecc59f}",
                     "type": "profile"
                 },
                 {
-                    "profile": "Terminal Docs",
+                    "profile": "{e492b1ac-cbf7-5299-b261-8ed4e330d74a}",
                     "type": "profile"
                 }
             ],
@@ -264,7 +273,7 @@
         },
         {
             "allowEmpty": false,
-            "entries":
+            "entries": 
             [
                 {
                     "commandline": null,
@@ -274,7 +283,7 @@
                 },
                 {
                     "allowEmpty": false,
-                    "entries":
+                    "entries": 
                     [
                         {
                             "commandline": null,
@@ -308,7 +317,7 @@
         },
         {
             "allowEmpty": false,
-            "entries":
+            "entries": 
             [
                 {
                     "commandline": null,
@@ -327,9 +336,9 @@
             "type": "folder"
         }
     ],
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
             "antialiasingMode": "grayscale",
             "autoMarkPrompts": true,
@@ -339,14 +348,14 @@
             "cursorShape": "emptyBox",
             "experimental.repositionCursorWithMouse": true,
             "experimental.rightClickContextMenu": true,
-            "font":
+            "font": 
             {
                 "weight": "light"
             },
             "intenseTextStyle": "all",
             "showMarksOnScrollbar": true
         },
-        "list":
+        "list": 
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -361,10 +370,6 @@
                 "name": "Command Prompt"
             },
             {
-                "font":
-                {
-                    "face": "Cascadia Code NF"
-                },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
@@ -389,7 +394,7 @@
                 "backgroundImageStretchMode": "none",
                 "commandline": "cmd.exe",
                 "cursorColor": "#FF0000",
-                "font":
+                "font": 
                 {
                     "size": 10.0,
                     "weight": "light"
@@ -407,7 +412,7 @@
                 "commandline": "%SystemRoot%\\System32\\sudo.exe %SystemRoot%\\System32\\cmd.exe",
                 "cursorColor": "#AFFFCF",
                 "cursorShape": "emptyBox",
-                "font":
+                "font": 
                 {
                     "face": "Cascadia Mono",
                     "size": 10.0,
@@ -426,46 +431,72 @@
                 "useAcrylic": true
             },
             {
+                "colorScheme": "Dark+",
                 "commandline": "cmd.exe",
-                "font":
-                {
-                    "size": 10.0,
-                    "weight": "light"
-                },
-                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal",
+                "guid": "{94ccc889-2f98-5c0c-9d14-912b02ecc59f}",
                 "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal.ico",
-                "name": "microsoft/terminal"
+                "name": "microsoft/terminal",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal"
             },
             {
-                "commandline": "cmd.exe",
                 "colorScheme": "One Half Light",
-                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal-docs",
+                "commandline": "cmd.exe",
+                "guid": "{e492b1ac-cbf7-5299-b261-8ed4e330d74a}",
                 "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal\\images\\terminal_contrast-black.ico",
-                "name": "Terminal Docs"
+                "name": "Terminal Docs",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal-docs"
             },
             {
                 "commandline": "pwsh.exe .\\backend.ps1",
-                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
+                "guid": "{a8b76a59-b200-5a40-ae3f-6e448ef108f1}",
+                "hidden": true,
                 "name": "backend",
-                "hidden": true
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project"
             },
             {
-                "commandline": "pwsh.exe .\\frontend.ps1",
-                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
                 "colorScheme": "Solarized Light",
+                "commandline": "pwsh.exe .\\frontend.ps1",
+                "guid": "{5b81a2d6-27e1-5a61-b245-674c22fe13b2}",
+                "hidden": true,
                 "name": "frontend",
-                "hidden": true
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project"
             },
             {
-                "commandline": "pwsh.exe",
-                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project",
-                "icon": "💻",
                 "colorScheme": "One Half Dark",
-                "name": "Web Project"
+                "commandline": "pwsh.exe",
+                "guid": "{a7160e55-4064-5f6e-8f28-3f9535cdbf5c}",
+                "icon": "\ud83d\udcbb",
+                "name": "Web Project",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project"
             },
+            {
+                "guid": "{9c354e90-4684-56b0-9899-ced10b66aebd}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{ee84e2b3-e46f-5ecd-ac0c-cb27eeab2f9b}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "cmd.exe",
+                "guid": "{af7dad34-2b63-5be5-8935-e3f4fea6c46f}",
+                "hidden": true,
+                "name": "build-settings",
+                "startingDirectory": "%WT_SETTINGS_DIR%"
+            }
         ]
     },
-    "schemes":
+    "schemes": 
     [
         {
             "background": "#FF3333",
@@ -515,23 +546,23 @@
         }
     ],
     "theme": "Purple Titlebar",
-    "themes":
+    "themes": 
     [
         {
             "name": "Purple Titlebar",
-            "tab":
+            "tab": 
             {
                 "background": "terminalBackground",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": "#00000000"
             },
-            "tabRow":
+            "tabRow": 
             {
                 "background": "#5D50AE80",
                 "unfocusedBackground": "#202020FF"
             },
-            "window":
+            "window": 
             {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": false,
