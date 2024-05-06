@@ -33,18 +33,9 @@
 					"commandline" : "cmd.exe",
 					"profile" : "build-settings",
 					"sessionId" : "{23891768-1427-4b4a-a13d-4cfb470d9bbe}",
-					"startingDirectory" : "E:\\build\\terminalbuild2024demo\\mike\\terminal-1.21.1161.0\\settings",
+					"startingDirectory" : "E:\\build\\terminalbuild2024demo",
 					"suppressApplicationTitle" : false,
 					"tabTitle" : "build-settings"
-				},
-				{
-					"action" : "newTab",
-					"commandline" : "cmd.exe",
-					"profile" : "microsoft/terminal",
-					"sessionId" : "{da458c73-c99e-4786-801b-c961b1cb67b4}",
-					"startingDirectory" : "E:\\build",
-					"suppressApplicationTitle" : false,
-					"tabTitle" : "microsoft/terminal"
 				}
 			]
 		}
