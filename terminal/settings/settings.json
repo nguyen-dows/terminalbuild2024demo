@@ -1,63 +1,57 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://raw.githubusercontent.com/microsoft/terminal/main/doc/cascadia/profiles.schema.json",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "next"
             },
-            "id": "User.scrollToMark.2A0DA8E0",
             "keys": "ctrl+down"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "globalSummon"
             },
-            "id": "User.globalSummon.51A3D78C",
             "keys": "ctrl+1"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "scrollToMark",
                 "direction": "previous"
             },
-            "id": "User.scrollToMark.D3F0B923",
             "keys": "ctrl+up"
         },
         {
             "command": "paste",
-            "id": "User.paste",
             "keys": "ctrl+v"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "showSuggestions",
                 "source": "all",
                 "useCommandline": true
             },
-            "id": "User.showSuggestions.4A407798",
             "keys": "ctrl+shift+y"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "multipleActions",
-                "actions": 
+                "actions":
                 [
                     {
                         "action": "newTab",
@@ -80,58 +74,52 @@
                 ]
             },
             "icon": "\ud83d\udcbb",
-            "id": "User.multipleActions.ABA14600",
             "keys": "ctrl+3",
             "name": "Create My Workspace"
         },
         {
             "command": "find",
-            "id": "User.find",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
             "keys": "alt+shift+d"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "showSuggestions",
                 "source": "commandHistory",
                 "useCommandline": true
             },
-            "id": "User.showSuggestions.807E15EE",
             "keys": "ctrl+shift+h"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "sendInput",
                 "input": "reg add \"hklm\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\AeDebug\\AutoExclusionList\" /v explorer.exe /t REG_DWORD /d 1 /f"
             },
-            "id": "User.sendInput.3A3DD9E3",
             "name": "prevent explorer.exe post-mortem"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "sendInput",
-                "input": "cdd\rmsbuild\rrun-tests\rgit status\rgit commit\rgit add --all\rgit commit\rgit push\rdir\rgit status\r"
+                "input": "cdd\rmsbuild\rrun-tests\rgit statius\rgit status\rgit commit\rgit add --all\rgit commit\rgit push\rdir\rgit status\r"
             },
-            "id": "User.sendInput.3A3DD9E3",
-            "name": "scott demo"
+            "name": "Build demo"
         },
         {
-            "commands": 
+            "commands":
             [
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git add --all\r"
@@ -139,7 +127,7 @@
                     "name": "add all"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git commit -m \"\"\u001b[D"
@@ -147,7 +135,7 @@
                     "name": "commit..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git fetch & git pull\r"
@@ -155,7 +143,7 @@
                     "name": "fetch&pull"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git merge origin/main\r"
@@ -163,7 +151,7 @@
                     "name": "merge main"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git log --graph --abbrev-commit --decorate --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\" --all"
@@ -171,7 +159,7 @@
                     "name": "graph"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git log -10 --pretty=oneline --abbrev-commit\r"
@@ -179,7 +167,7 @@
                     "name": "log -10"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git checkout -b dev/migrie/b/"
@@ -187,7 +175,7 @@
                     "name": "new branch"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git branch --list \"**\"\u001b[D\u001b[D"
@@ -195,7 +183,7 @@
                     "name": "look for branch..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git push origin very_old_sha1:refs/heads/name/of/new/branch"
@@ -203,7 +191,7 @@
                     "name": "push old commit to new branch, without checkout"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "git clean -ndx -e *.user -e *.cmd -e packages/**"
@@ -214,10 +202,10 @@
             "name": "git..."
         },
         {
-            "commands": 
+            "commands":
             [
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz} -C {destination_path}"
@@ -225,7 +213,7 @@
                     "name": "extract ze file into path..."
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -xvzf {source.tar.gz}"
@@ -233,7 +221,7 @@
                     "name": "extract ze file"
                 },
                 {
-                    "command": 
+                    "command":
                     {
                         "action": "sendInput",
                         "input": "tar -cvzf {destination.tar.gz} {source}"
@@ -248,14 +236,14 @@
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "firstWindowPreference": "persistedWindowLayout",
-    "newTabMenu": 
+    "newTabMenu":
     [
         {
             "type": "remainingProfiles"
         },
         {
             "allowEmpty": false,
-            "entries": 
+            "entries":
             [
                 {
                     "profile": "{94ccc889-2f98-5c0c-9d14-912b02ecc59f}",
@@ -273,7 +261,7 @@
         },
         {
             "allowEmpty": false,
-            "entries": 
+            "entries":
             [
                 {
                     "commandline": null,
@@ -283,7 +271,7 @@
                 },
                 {
                     "allowEmpty": false,
-                    "entries": 
+                    "entries":
                     [
                         {
                             "commandline": null,
@@ -317,7 +305,7 @@
         },
         {
             "allowEmpty": false,
-            "entries": 
+            "entries":
             [
                 {
                     "commandline": null,
@@ -336,9 +324,9 @@
             "type": "folder"
         }
     ],
-    "profiles": 
+    "profiles":
     {
-        "defaults": 
+        "defaults":
         {
             "antialiasingMode": "grayscale",
             "autoMarkPrompts": true,
@@ -348,14 +336,14 @@
             "cursorShape": "emptyBox",
             "experimental.repositionCursorWithMouse": true,
             "experimental.rightClickContextMenu": true,
-            "font": 
+            "font":
             {
                 "weight": "light"
             },
             "intenseTextStyle": "all",
             "showMarksOnScrollbar": true
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -394,7 +382,7 @@
                 "backgroundImageStretchMode": "none",
                 "commandline": "cmd.exe",
                 "cursorColor": "#FF0000",
-                "font": 
+                "font":
                 {
                     "size": 10,
                     "weight": "light"
@@ -412,7 +400,7 @@
                 "commandline": "%SystemRoot%\\System32\\sudo.exe %SystemRoot%\\System32\\cmd.exe",
                 "cursorColor": "#AFFFCF",
                 "cursorShape": "emptyBox",
-                "font": 
+                "font":
                 {
                     "face": "Cascadia Mono",
                     "size": 10,
@@ -544,7 +532,7 @@
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#FF3333",
@@ -594,23 +582,23 @@
         }
     ],
     "theme": "Purple Titlebar",
-    "themes": 
+    "themes":
     [
         {
             "name": "Purple Titlebar",
-            "tab": 
+            "tab":
             {
                 "background": "terminalBackground",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": "#00000000"
             },
-            "tabRow": 
+            "tabRow":
             {
                 "background": "#5D50AE80",
                 "unfocusedBackground": "#202020FF"
             },
-            "window": 
+            "window":
             {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": true,
