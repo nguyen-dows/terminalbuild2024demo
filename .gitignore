@@ -1,2 +1,2 @@
-terminal/settings/terminal
-terminal/settings/terminal-docs
+terminal/settings/terminal/**
+terminal/settings/terminal-docs/**

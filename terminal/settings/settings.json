@@ -6,11 +6,11 @@
         {
             "command": 
             {
-                "action": "scrollToMark",
-                "direction": "previous"
+                "action": "copy",
+                "singleLine": false
             },
-            "id": "User.scrollToMark.D3F0B923",
-            "keys": "ctrl+up"
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
         },
         {
             "command": 
@@ -32,11 +32,11 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "scrollToMark",
+                "direction": "previous"
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.scrollToMark.D3F0B923",
+            "keys": "ctrl+up"
         },
         {
             "command": "paste",
@@ -396,7 +396,7 @@
                 "cursorColor": "#FF0000",
                 "font": 
                 {
-                    "size": 10.0,
+                    "size": 10,
                     "weight": "light"
                 },
                 "guid": "{48a6cef7-e9fa-5e68-9d4f-f6d767f4b83b}",
@@ -415,7 +415,7 @@
                 "font": 
                 {
                     "face": "Cascadia Mono",
-                    "size": 10.0,
+                    "size": 10,
                     "weight": "light"
                 },
                 "guid": "{f0c9f8b5-2565-4b49-afe0-b84d66860b84}",
@@ -470,29 +470,77 @@
                 "startingDirectory": "%WT_SETTINGS_DIR%\\demo-project"
             },
             {
-                "guid": "{9c354e90-4684-56b0-9899-ced10b66aebd}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{ee84e2b3-e46f-5ecd-ac0c-cb27eeab2f9b}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
                 "commandline": "cmd.exe",
                 "guid": "{af7dad34-2b63-5be5-8935-e3f4fea6c46f}",
                 "hidden": true,
                 "name": "build-settings",
                 "startingDirectory": "%WT_SETTINGS_DIR%"
+            },
+            {
+                "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+                "hidden": true,
+                "name": "Ubuntu-22.04",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": true,
+                "name": "My new profile name, this is in C:/Users/migrie/AppData/Local/Microsoft/Windows Terminal/Fragments/GH-12520/schemes.json",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{953b409e-87fb-51f5-b70b-a7d78594dd58}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{358fdc3d-f7be-5ea0-b250-883a427eb43b}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022 [Preview]",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{202014f1-d68d-53b9-8a59-0d6028868bf2}",
+                "hidden": true,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{ac74ab87-6fd8-587f-9769-bcb2643a4918}",
+                "hidden": true,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+                "hidden": true,
+                "name": "Visual Studio Debug Console",
+                "source": "VSDebugConsole"
+            },
+            {
+                "guid": "{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
+                "hidden": false,
+                "name": "Yori",
+                "source": "Yori"
+            },
+            {
+                "guid": "{aab79973-318f-43b6-a9bc-b4096493753f}",
+                "hidden": false,
+                "name": "Nushell",
+                "source": "nu"
+            },
+            {
+                "guid": "{4ca3f36a-954b-5f17-a131-52dc5790981e}",
+                "hidden": false,
+                "name": "Ubuntu 18.04.5 on Windows",
+                "source": "CanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgsc"
+            },
+            {
+                "guid": "{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
+                "hidden": false,
+                "name": "Ubuntu 22.04.3 LTS",
+                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
             }
         ]
     },
@@ -565,7 +613,7 @@
             "window": 
             {
                 "applicationTheme": "dark",
-                "experimental.rainbowFrame": false,
+                "experimental.rainbowFrame": true,
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": true
