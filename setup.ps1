@@ -12,6 +12,7 @@ New-Item -ItemType Directory -Path $PSScriptRoot\terminal\settings\terminal
 Remove-Item -Recurse -Force $PSScriptRoot\terminal\settings\terminal-docs
 New-Item -ItemType Directory -Path $PSScriptRoot\terminal\settings\terminal-docs
 
-# Clone the Terminal repo into .\mike\terminal-1.21.1161.0\settings\terminal
-git clone https://github.com/microsoft/terminal.git $PSScriptRoot\terminal\settings\terminal
-git clone https://github.com/microsoftdocs/terminal.git $PSScriptRoot\terminal\settings\terminal-docs
+# Clone the Terminal repo. We only need the last few commits
+git clone https://github.com/microsoft/terminal.git --depth 25 $PSScriptRoot\terminal\settings\terminal
+# git clone https://github.com/microsoft/terminal.git $PSScriptRoot\terminal\settings\terminal
+git clone https://github.com/microsoftdocs/terminal.git --depth 25 $PSScriptRoot\terminal\settings\terminal-docs
