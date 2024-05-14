@@ -610,7 +610,7 @@
             "window":
             {
                 "applicationTheme": "dark",
-                "experimental.rainbowFrame": true,
+                "experimental.rainbowFrame": false,
                 "frame": null,
                 "unfocusedFrame": null,
                 "useMica": true
