@@ -110,8 +110,8 @@
         {
             "command":
             {
-                "action": "sendInput",
-                "input": "cdd\rmsbuild\rrun-tests\rgit statius\rgit status\rgit commit\rgit add --all\rgit commit\rgit push\rdir\rgit status\r"
+                "action": "newTab",
+                "profile": "demo"
             },
             "name": "Build demo"
         },
@@ -236,6 +236,7 @@
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "firstWindowPreference": "persistedWindowLayout",
+    "debugFeatures": true,
     "newTabMenu":
     [
         {
@@ -424,6 +425,14 @@
                 "guid": "{94ccc889-2f98-5c0c-9d14-912b02ecc59f}",
                 "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal.ico",
                 "name": "microsoft/terminal",
+                "startingDirectory": "%WT_SETTINGS_DIR%\\terminal"
+            },
+            {
+                "colorScheme": "Dark+",
+                "commandline": "cmd.exe /k type ..\\demo-project\\demo.txt && cdd %WT_SETTINGS_DIR%\\terminal",
+                "icon": "%WT_SETTINGS_DIR%\\terminal\\res\\terminal.ico",
+                "name": "demo",
+                "tabTitle": "microsoft/terminal",
                 "startingDirectory": "%WT_SETTINGS_DIR%\\terminal"
             },
             {
