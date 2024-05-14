@@ -1,19 +1,19 @@
 {
 	"generatedProfiles" : 
 	[
-		"{9c354e90-4684-56b0-9899-ced10b66aebd}",
 		"{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+		"{9c354e90-4684-56b0-9899-ced10b66aebd}",
 		"{2c4de342-38b7-51cf-b940-2309a097f518}",
 		"{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
 		"{ee84e2b3-e46f-5ecd-ac0c-cb27eeab2f9b}",
-		"{51855cb2-8cce-5362-8f54-464b92b32386}",
 		"{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
+		"{51855cb2-8cce-5362-8f54-464b92b32386}",
 		"{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
 		"{17bf3de4-5353-5709-bcf9-835bd952a95e}",
 		"{953b409e-87fb-51f5-b70b-a7d78594dd58}",
 		"{358fdc3d-f7be-5ea0-b250-883a427eb43b}",
-		"{202014f1-d68d-53b9-8a59-0d6028868bf2}",
 		"{aab79973-318f-43b6-a9bc-b4096493753f}",
+		"{202014f1-d68d-53b9-8a59-0d6028868bf2}",
 		"{ac74ab87-6fd8-587f-9769-bcb2643a4918}",
 		"{16208362-94fc-5b1f-a491-5b2624d5ab56}",
 		"{e58ba53f-c360-5e5c-b3c7-498d490b0751}",
@@ -52,5 +52,5 @@
 		"nt -p demo",
 		"nt- p demo"
 	],
-	"settingsHash" : "613d359ba23b4280-01daa57d32a4b100"
+	"settingsHash" : "b051ae5fbe8a43fc-01daa5e64fc19a00"
 }
